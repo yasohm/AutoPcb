@@ -10,11 +10,6 @@ modif: modif.c
 main: main.c modif.c
 	$(CC) $(CFLAGS) -o main main.c
 
-
-db-import:
-	python3 import_xlsx_to_sqlite.py
-
-
 db-export:
 	python3 export_sqlite_to_xlsx.py
 
